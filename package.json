@@ -1,0 +1,25 @@
+{
+  "name": "slimstack",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Token-lean agentic workflow skills, Kanban board with agent delegation, session bootstrap, and Bash output compaction for Claude Code and omp",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/febradc-github/slimstack.git"
+  },
+  "omp": {
+    "extensions": ["./dist/omp.mjs"]
+  },
+  "scripts": {
+    "build": "bun scripts/build.ts",
+    "lint": "bun scripts/lint.ts",
+    "test": "bun test",
+    "typecheck": "bun x tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.6.0"
+  }
+}

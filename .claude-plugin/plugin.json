@@ -1,0 +1,22 @@
+{
+  "name": "slimstack",
+  "version": "0.1.0",
+  "description": "Token-lean agentic workflow skills, Kanban board with agent delegation, session bootstrap, and Bash output compaction",
+  "author": { "name": "febradc-github" },
+  "homepage": "https://github.com/febradc-github/slimstack",
+  "repository": "https://github.com/febradc-github/slimstack",
+  "license": "MIT",
+  "keywords": ["workflow", "tokens", "agents", "tdd", "kanban"],
+  "agents": ["./claude-agents/sceptical-plan-reviewer.md"],
+  "mcpServers": {
+    "board": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/dist/mcp.mjs"],
+      "env": {
+        "SLIMSTACK_HARNESS": "claude",
+        "SLIMSTACK_BOARD_DIR": "${SLIMSTACK_BOARD_DIR:-}",
+        "SLIMSTACK_RUN_TOKEN": "${SLIMSTACK_RUN_TOKEN:-}"
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "slimstack",
+  "owner": { "name": "febradc-github" },
+  "metadata": { "description": "Single-plugin catalog so slimstack installs straight from this GitHub repo" },
+  "plugins": [
+    {
+      "name": "slimstack",
+      "source": "./",
+      "description": "Token-lean agentic workflow skills, Kanban board with agent delegation, session bootstrap, and Bash output compaction",
+      "category": "development"
+    }
+  ]
+}

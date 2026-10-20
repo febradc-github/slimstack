@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "slimstack-board": {
+      "type": "stdio",
+      "command": "omp",
+      "args": ["${OMP_PLUGIN_ROOT}/dist/mcp.mjs"],
+      "env": {
+        "BUN_BE_BUN": "1",
+        "SLIMSTACK_HARNESS": "omp",
+        "SLIMSTACK_BOARD_DIR": "SLIMSTACK_BOARD_DIR",
+        "SLIMSTACK_RUN_TOKEN": "SLIMSTACK_RUN_TOKEN"
+      }
+    }
+  }
+}
