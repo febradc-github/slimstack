@@ -1,5 +1,7 @@
 # slimstack
 
+![slimstack: a chibi dev team around a Kanban board](docs/slimstack/chibi.png)
+
 Token-lean agentic workflow for Claude Code and omp, installed straight from this GitHub repo. It ships 12 workflow skills (brainstorm to finisher), a tiny session bootstrap that makes agents use them with terse-output rules, a Bash output compactor with full-output spill-to-disk and local savings stats, a model-run sceptical review gate at the end of brainstorm, and a locally hosted Kanban board where you are the orchestrator and headless agents code, test, and reply on your board actions.
 
 ## Install (GitHub only)
